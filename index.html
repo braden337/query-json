@@ -12,6 +12,9 @@
         results = regex.exec(location.search);
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
     }
+    
+    var x = getParameterByName('jsson');
+    document.write(JSON.parse(x.decodeURIComponent(x)));
   </script>
 </head>
 <body>
